@@ -15,6 +15,9 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ResumeModal } from './components/ResumeModal';
 import { PhotoUploadModal } from './components/PhotoUploadModal';
+import { RecruiterModal } from './components/RecruiterModal';
+import { CommandPalette } from './components/CommandPalette';
+import { AIAssistantWidget } from './components/AIAssistantWidget';
 import { NotFound } from './components/NotFound';
 import { personalInfo } from './data/portfolioData';
 
@@ -22,6 +25,8 @@ export const AppContent: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [isResumeOpen, setIsResumeOpen] = useState(false);
   const [isPhotoModalOpen, setIsPhotoModalOpen] = useState(false);
+  const [isRecruiterOpen, setIsRecruiterOpen] = useState(false);
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const [customPhotoUrl, setCustomPhotoUrl] = useState<string>('');
   const [is404, setIs404] = useState(false);
 
@@ -29,16 +34,28 @@ export const AppContent: React.FC = () => {
     // Check if path is unknown 404
     const path = window.location.pathname;
     if (path !== '/' && path !== '' && !path.startsWith('/#')) {
-      // In a SPA, if user visits a random non-root path
-      // we can support standard root or 404
+      // In SPA, handles root or 404
     }
 
     // Custom sleek initial loading preloader
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 700);
+    }, 600);
 
     return () => clearTimeout(timer);
+  }, []);
+
+  // Global keyboard shortcut for Command Palette (Ctrl+K or Cmd+K)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setIsCommandPaletteOpen((prev) => !prev);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   if (is404) {
@@ -78,7 +95,11 @@ export const AppContent: React.FC = () => {
       <div className="relative z-10 flex flex-col min-h-screen">
         
         {/* Navigation Bar */}
-        <Navbar onOpenResume={() => setIsResumeOpen(true)} />
+        <Navbar 
+          onOpenResume={() => setIsResumeOpen(true)}
+          onOpenRecruiter={() => setIsRecruiterOpen(true)}
+          onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
+        />
 
         {/* Hero Section */}
         <main className="flex-1">
@@ -131,6 +152,29 @@ export const AppContent: React.FC = () => {
         onClose={() => setIsPhotoModalOpen(false)}
         onPhotoSelected={(url) => setCustomPhotoUrl(url)}
         currentPhotoUrl={customPhotoUrl}
+      />
+
+      <RecruiterModal
+        isOpen={isRecruiterOpen}
+        onClose={() => setIsRecruiterOpen(false)}
+        onOpenResume={() => setIsResumeOpen(true)}
+        onOpenProjects={() => {
+          const el = document.getElementById('projects');
+          el?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      />
+
+      <CommandPalette
+        isOpen={isCommandPaletteOpen}
+        onClose={() => setIsCommandPaletteOpen(false)}
+        onOpenResume={() => setIsResumeOpen(true)}
+        onOpenRecruiter={() => setIsRecruiterOpen(true)}
+      />
+
+      {/* Floating Ask Santhosh AI Assistant */}
+      <AIAssistantWidget
+        onOpenResume={() => setIsResumeOpen(true)}
+        onOpenRecruiter={() => setIsRecruiterOpen(true)}
       />
 
     </div>
