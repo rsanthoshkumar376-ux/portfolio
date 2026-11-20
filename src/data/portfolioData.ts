@@ -243,107 +243,133 @@ export const educationData: EducationItem[] = [
 export const certificationsData: Certificate[] = [
   {
     id: "cert-01",
-    title: "Programming Fundamentals using Python",
+    title: "Introduction to Data Science",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-PY-01",
-    skillsLearned: ["Python Syntax", "Data Structures", "Control Flow", "Functions & Modules"]
+    date: "May 23, 2026",
+    credentialId: "INF-SB-DS-01",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-01.pdf",
+    skillsLearned: ["Data Science Foundations", "Statistical Analysis", "Data Manipulation", "Exploratory Data Analysis"]
   },
   {
     id: "cert-02",
-    title: "Object Oriented Programming using Java",
+    title: "Introduction to Deep Learning",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-JAV-02",
-    skillsLearned: ["Inheritance", "Polymorphism", "Encapsulation", "Exception Handling"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-DL-02",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-02.pdf",
+    skillsLearned: ["Neural Networks", "Backpropagation", "Deep Learning Architectures", "Model Optimization"]
   },
   {
     id: "cert-03",
-    title: "Database Management Systems and SQL",
+    title: "Introduction to Natural Language Processing",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-SQL-03",
-    skillsLearned: ["Relational Schema Design", "Complex SQL Queries", "Normalization", "ACID Properties"]
+    date: "May 23, 2026",
+    credentialId: "INF-SB-NLP-03",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-03.pdf",
+    skillsLearned: ["Text Preprocessing", "Tokenization & Lemmatization", "Sentiment Analysis", "NLP Modeling"]
   },
   {
     id: "cert-04",
-    title: "Artificial Intelligence Primer",
+    title: "Introduction to Robotic Process Automation",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-AI-04",
-    skillsLearned: ["Search Algorithms", "Knowledge Representation", "Inference Engines", "AI Ethics"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-RPA-04",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-04.pdf",
+    skillsLearned: ["RPA Concepts", "Workflow Automation", "Bot Architecture", "Process Optimization"]
   },
   {
     id: "cert-05",
-    title: "Machine Learning Foundations",
+    title: "OpenAI GPT-3 for Developers",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-ML-05",
-    skillsLearned: ["Supervised Learning", "Regression & Classification", "Model Evaluation", "Overfitting Prevention"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-GPT3-05",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-05.pdf",
+    skillsLearned: ["GPT-3 APIs", "Prompt Design", "Generative AI Integration", "Embeddings & Completions"]
   },
   {
     id: "cert-06",
-    title: "Data Science Essentials",
+    title: "Deep Learning for Developers",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-DS-06",
-    skillsLearned: ["Data Wrangling", "Exploratory Data Analysis", "Statistical Thinking", "Data Cleansing"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-DLD-06",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-06.pdf",
+    skillsLearned: ["Production Deep Learning", "Frameworks & Tensors", "Computer Vision & Sequences", "Inference Pipelines"]
   },
   {
     id: "cert-07",
-    title: "Web Development Fundamentals (HTML5 & CSS3)",
+    title: "Agile Scrum in Practice",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-WEB-07",
-    skillsLearned: ["Semantic HTML", "CSS Flexbox & Grid", "Responsive Design", "Web Accessibility"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-SCRUM-07",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-07.pdf",
+    skillsLearned: ["Agile Ceremonies", "Sprint Planning", "Scrum Framework", "Cross-Functional Collaboration"]
   },
   {
     id: "cert-08",
-    title: "JavaScript for Modern Web Applications",
+    title: "Generative Models for Developers",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-JS-08",
-    skillsLearned: ["Asynchronous JS", "Promises & Async/Await", "DOM Manipulation", "ES6+ Features"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-GEN-08",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-08.pdf",
+    skillsLearned: ["Generative AI Architecture", "Diffusion & Transformers", "Fine-Tuning Concepts", "API Orchestration"]
   },
   {
     id: "cert-09",
-    title: "Software Engineering & Lifecycle Principles",
+    title: "Artificial Intelligence",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-SE-09",
-    skillsLearned: ["SDLC Methodologies", "Requirement Analysis", "Testing Principles", "Design Patterns"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-AI-09",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-09.pdf",
+    skillsLearned: ["Core AI Algorithms", "Search Strategies", "Knowledge Representation", "Automated Reasoning"]
   },
   {
     id: "cert-10",
-    title: "Cloud Computing Overview",
+    title: "Prompt Engineering",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-CC-10",
-    skillsLearned: ["IaaS/PaaS/SaaS", "Cloud Architecture", "Virtualization", "Cloud Security Basics"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-PROMPT-10",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-10.pdf",
+    skillsLearned: ["Few-Shot Prompting", "Chain-of-Thought (CoT)", "Role-Based Instructions", "Hallucination Mitigation"]
   },
   {
     id: "cert-11",
-    title: "Version Control with Git & GitHub",
+    title: "Generative AI Unleashing",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-GIT-11",
-    skillsLearned: ["Branching & Merging", "Pull Requests", "Merge Conflict Resolution", "Collaborative Workflows"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-GENAI-11",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-11.pdf",
+    skillsLearned: ["Enterprise GenAI Strategy", "Multi-modal AI", "LLM Tool Calling", "Ethical AI Principles"]
   },
   {
     id: "cert-12",
-    title: "Problem Solving and Algorithmic Thinking",
+    title: "Introduction to Artificial Intelligence",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-PS-12",
-    skillsLearned: ["Time Complexity Analysis", "Recursion", "Divide and Conquer", "Edge Case Testing"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-INTROAI-12",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-12.pdf",
+    skillsLearned: ["AI History & Taxonomy", "Symbolic AI vs ML", "Agent Architectures", "Intelligent Systems"]
   },
   {
     id: "cert-13",
-    title: "Professional Workplace & Communication Skills",
+    title: "Computer Vision 101",
     issuer: "Infosys Springboard",
-    date: "2024",
-    credentialId: "INF-SB-COMM-13",
-    skillsLearned: ["Technical Presentation", "Cross-Functional Collaboration", "Active Listening", "Workplace Ethics"]
+    date: "May 24, 2026",
+    credentialId: "INF-SB-CV-13",
+    verificationLink: "https://verify.onwingspan.com",
+    certificateFile: "/certificates/cert-13.pdf",
+    skillsLearned: ["Image Processing", "Feature Extraction", "Convolutional Neural Networks", "Object Detection Basics"]
   }
 ];
 

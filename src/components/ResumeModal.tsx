@@ -226,7 +226,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             </h2>
             <div className="space-y-2 text-xs">
               <p>
-                <strong className="text-slate-900">Infosys Springboard (13 Certifications):</strong> Completed coursework in Python, Java OOP, Database Management &amp; SQL, AI Primer, Machine Learning Foundations, Web Development (HTML/CSS/JS), Git &amp; GitHub, and Problem Solving.
+                <strong className="text-slate-900">Infosys Springboard (13 Verified Certifications):</strong> Completed advanced coursework in Data Science, Deep Learning, Natural Language Processing (NLP), OpenAI GPT-3 for Developers, Generative Models, Deep Learning for Developers, Prompt Engineering, Generative AI Unleashing, Computer Vision 101, Robotic Process Automation (RPA), and Agile Scrum in Practice.
               </p>
               <p>
                 <strong className="text-slate-900">Hackathons:</strong> Smart India Hackathon (SIH) project participant in compliance scrutiny; Designathon 2.0 participant in rapid user-centered prototyping.

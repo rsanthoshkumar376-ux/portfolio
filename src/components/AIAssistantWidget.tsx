@@ -118,9 +118,9 @@ export const AIAssistantWidget: React.FC<AIAssistantWidgetProps> = ({
 
     if (q.includes('certif') || q.includes('infosys') || q.includes('course') || q.includes('springboard')) {
       return {
-        text: "Santhosh has completed 13 verified Infosys Springboard certifications covering Python, Java OOP, Relational DBMS & SQL, AI Primer, Machine Learning Essentials, Web Development, Git & GitHub, and Algorithmic Thinking.",
+        text: "Santhosh has completed 13 verified Infosys Springboard certifications focusing heavily on AI & Data Science: Data Science, Deep Learning, Natural Language Processing, OpenAI GPT-3, Generative Models, Prompt Engineering, Computer Vision 101, RPA, and Agile Scrum.",
         actionButton: {
-          label: "Browse 13 Certifications",
+          label: "Browse 13 Verified Certifications",
           action: () => {
             const el = document.getElementById('certifications');
             el?.scrollIntoView({ behavior: 'smooth' });
